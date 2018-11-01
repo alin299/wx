@@ -22,7 +22,12 @@ var imgUrls = [
   "/images/5.jpg",
   "/images/6.jpg",
       ]
+function getImgUrls(){
+  return imgUrls;
+}
+
 module.exports={
   post:post,
-  imgUrls: imgUrls
+  imgUrls: imgUrls,
+  getImgUrls:getImgUrls
 }

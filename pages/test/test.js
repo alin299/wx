@@ -1,5 +1,6 @@
 // pages/test/test.js
-var dataObj = require("../../data/data.js");
+var dataObj = require("../../data/data.js")
+import {DBPost} from "../../data/DBPost.js";
 Page({
 
   /**
@@ -12,8 +13,10 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    this.setData({ post: dataObj.post, imgUrls: dataObj.imgUrls})
+  onLoad: function (odeptions) {
+    var db = new DBPost()
+    this.setData({ imgUrls: db.getImageUrls(),post:db.getAllPostData()})
+    // this.setData({ post: dataObj.post, imgUrls: dataObj.imgUrls})
   },
 
   /**
