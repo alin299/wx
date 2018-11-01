@@ -14,6 +14,15 @@ var post = [{
   content: "人出生后身体中的物质再与环境中的食物、空气、水、以及其它们物质中的化学成份反应结合而成长，并受环境中的化学物质的影响而变化，从而产生形态、行为上的变化。这个过程中，构成人的物质元素在不断变化，不断地在人的身体中进进出出。它们的行为遵循什么规律呢？"
 },
 ]
+var imgUrls = [
+  "/images/1.jpg",
+  "/images/2.jpg",
+  "/images/3.jpg",
+  "/images/4.jpg",
+  "/images/5.jpg",
+  "/images/6.jpg",
+      ]
 module.exports={
-  post:post
+  post:post,
+  imgUrls: imgUrls
 }

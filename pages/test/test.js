@@ -6,21 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls:[
-      "/images/1.jpg",
-      "/images/2.jpg",
-      "/images/3.jpg",
-      "/images/4.jpg",
-      "/images/5.jpg",
-      "/images/6.jpg",
-      ]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      this.setData({post:dataObj.post})
+    this.setData({ post: dataObj.post, imgUrls: dataObj.imgUrls})
   },
 
   /**
