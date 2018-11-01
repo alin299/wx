@@ -1,0 +1,12 @@
+<template name="article">
+  <view class="main1">
+      <view class="v1">
+        <image class="userimg" style="width: 150rpx; height: 150rpx;" src="{{img}}"></image>
+        <text class="date">2018/10/18</text>
+      </view>
+      <text class="v2">{{title}}</text>
+      <view class="v3">
+        <text>{{content}}</text>
+      </view>
+    </view>
+</template>

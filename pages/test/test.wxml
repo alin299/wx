@@ -1,3 +1,4 @@
+<import src="/template/article.wxml"/>
 <swiper indicator-dots="ture"
   autoplay="true" interval="2000" duration="1000">
   <block wx:for="{{imgUrls}}">
@@ -8,15 +9,6 @@
 </swiper>
 <view class="main">
   <block wx:for="{{post}}">
-    <view class="main1">
-      <view class="v1">
-        <image class="userimg" style="width: 150rpx; height: 150rpx;" src="{{item.img}}"></image>
-        <text class="date">2018/10/18</text>
-      </view>
-      <text class="v2">{{item.title}}</text>
-      <view class="v3">
-        <text>{{item.content}}</text>
-      </view>
-    </view>
+    <template is="article" data="{{...item}}"/>
   </block >
 </view>
