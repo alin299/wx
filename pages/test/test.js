@@ -66,5 +66,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onTapToDetail: function(event){
+    var id = event.currentTarget.dataset.articleId;
+    console.log(id);
+    wx.navigateTo({
+      url: 'detail/detail?id='+id,
+    })
   }
 })

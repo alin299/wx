@@ -9,6 +9,8 @@
 </swiper>
 <view class="main">
   <block wx:for="{{post}}">
-    <template is="article" data="{{...item}}"/>
+    <view catchtap='onTapToDetail' data-article-id='{{item.articleId}}'>
+      <template is="article" data="{{...item}}"/>
+    </view>
   </block >
 </view>
